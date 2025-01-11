@@ -1,9 +1,8 @@
 # Отчёт по заданию Terraform
 
+![./terraform --version.png](https://github.com/V3l337/ter-homeworks_01/blob/main/terraform%20--version.png)
 
-
-
-## Задание 1
+## Задание 2
 
 ### В каком terraform-файле, согласно .gitignore, допустимо сохранить личную, секретную информацию?
 Согласно файлу `.gitignore`, личную информацию (логины, пароли, ключи, токены и т.д.) допустимо сохранять в файле:
@@ -14,7 +13,7 @@ personal.auto.tfvars
 
 ---
 
-## Задание 2
+## Задание 3
 
 ### Найденное секретное содержимое ресурса random_password:
 
@@ -29,7 +28,7 @@ personal.auto.tfvars
 
 ---
 
-## Задание 3
+## Задание 4
 
 ### Ошибки при выполнении команды `terraform validate` после раскомментирования кода:
 
@@ -53,7 +52,15 @@ A name must start with a letter or underscore and may contain only letters, digi
 ```
 **Объяснение:** Имя ресурса "1nginx" начинается с цифры, что нарушает правила именования.
 
-## Задание 4
+---
+
+## Задание 5
+
+![](https://github.com/V3l337/ter-homeworks_01/blob/main/docker%20ps.png)
+
+---
+
+## Задание 6
 
 ### Опасность применения ключа `-auto-approve`:
 Ключ `-auto-approve` автоматически подтверждает выполнение изменений без запроса у пользователя. Это может быть опасно, так как:
@@ -63,9 +70,11 @@ A name must start with a letter or underscore and may contain only letters, digi
 ### Зачем используется ключ `-auto-approve`:
 Этот ключ полезен в автоматизированных сценариях (например, в CI/CD пайплайнах), где требуется выполнение Terraform без вмешательства человека.
 
+![](https://github.com/V3l337/ter-homeworks_01/blob/main/docker%20ps%20%2B%20.png)
+
 ---
 
-## Задание 5
+## Задание 7
 
 ### Содержимое файла `terraform.tfstate` после удаления ресурсов:
 ```json
@@ -79,6 +88,10 @@ A name must start with a letter or underscore and may contain only letters, digi
   "check_results": null
 }
 ```
+
+---
+
+## Задание 8
 
 ### Почему не был удалён Docker-образ `nginx:latest`:
 Docker-образ остался на хосте из-за настройки:
